@@ -1,10 +1,10 @@
-# The purpose of this is to test a magic square.
+# The purpose of this program is to test if a 3x3 Matrix is a Magic Square or not.
+* This is a visual 3x3 Matrix.
   ```
     [a, b, c]
     [d, e, f]
     [g, h, i]
   ```
-* This is the format of a Magic Square.
 * For a Magic Square to exist, the following must be true:
   * The sum of all the rows, columns, and diagonals must be the same value n.
 
