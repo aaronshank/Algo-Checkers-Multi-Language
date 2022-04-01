@@ -1,0 +1,15 @@
+.grid {
+  display: table;
+  border-spacing: 5px;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  width: 50px;
+  height: auto;
+  background: grey;
+  display: table-cell;
+}

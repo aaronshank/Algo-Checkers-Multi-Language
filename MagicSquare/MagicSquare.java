@@ -1,3 +1,4 @@
+package MagicSquare;
 import java.util.Scanner;
 
 public class MagicSquare {
@@ -25,7 +26,7 @@ public class MagicSquare {
 
   static boolean isMagicSquare(int mSquare[][]) {
 
-    // SumDiag1 and sumDiag2 are the sum of the two diagonals
+    // sumDiag1 and sumDiag2 are the sum of the two diagonals
     int sumDiag1 = 0, sumDiag2 = 0;
     for (int i = 0; i < N; i++) {
       // (i, i) is the diagonal from top-left -> bottom-right
@@ -33,13 +34,13 @@ public class MagicSquare {
       sumDiag1 += mSquare[i][i];
       sumDiag2 += mSquare[i][N - 1 - i];
     }
-    // if the two diagonal sums are unequal then it is not a magic square
+
+    // If the two diagonal sums are unequal then it is not a magic square
     if (sumDiag1 != sumDiag2)
       return false;
 
-    // calculating sums of Rows and columns and checking if they are equal to each
-    // other,
-    // as well as equal to diagonal sum or not
+    // Calculating sums of Rows and columns and checking if they are equal to each
+    // other, as well as equal to diagonal sum or not
     for (int i = 0; i < N; i++) {
 
       int rowSum = 0, colSum = 0;
